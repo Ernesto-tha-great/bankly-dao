@@ -6,7 +6,7 @@ export const data1 = [
     icon: "/assets.svg",
   },
   {
-    title: "Built with the Power of Web3-",
+    title: "Built with the Power of Web3",
     description:
       "Built with ERC-20 infrastructure at the core, our investment clubs are composable with any DAO and web3 tool.",
     icon: "/contract.svg",
@@ -14,7 +14,7 @@ export const data1 = [
   {
     title: "By & For Our Users",
     description:
-      "Bankly is a community-driven platform, built by the people, for the people.",
+      "Piron is a community-driven platform, built by the people, for the people.",
     icon: "/feat2.svg",
   },
   {
