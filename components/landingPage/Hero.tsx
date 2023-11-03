@@ -7,7 +7,7 @@ const montserrat = EB_Garamond({ weight: "800", subsets: ["latin"] });
 const subFont = EB_Garamond({ weight: "400", subsets: ["latin"] });
 const Hero = () => {
   return (
-    <div className=" flex justify-evenly items-center bg-gradient-to-r from-black/90 from-5%  to to-black to-95%  text-white">
+    <div className=" flex justify-evenly items-center bg-gradient-to-r from-black/90 from-5% via-black via-65%  to to-black to-5% text-white">
       {/* <div className="absolute inset-0 bg-white opacity-10"></div> gradient-to-br from-black via-[#01013a] to-[#00020b] */}
       <div className="flex flex-col gap-8">
         <h1 className={cn("text-6xl max-w-xl font-bold", montserrat.className)}>
