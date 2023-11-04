@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 const montserrat = EB_Garamond({ weight: "600", subsets: ["latin"] });
 const LandingNav = () => {
   return (
-    <header className=" bg-black text-white sticky">
+    <header className=" bg-black text-white">
       <div className="flex justify-between mx-6 py-6  items-center">
         <div className="flex items-center justify-between gap-14">
           <h1 className={cn("text-3xl ", montserrat.className)}>

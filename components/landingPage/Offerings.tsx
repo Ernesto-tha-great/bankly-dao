@@ -20,7 +20,7 @@ const subFont = EB_Garamond({ weight: "400", subsets: ["latin"] });
 const subFont2 = EB_Garamond({ weight: "500", subsets: ["latin"] });
 const Offerings = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-black to-black/95  text-white py-8">
+    <div className="bg-black text-white/90 py-8">
       <div className="items-center text-center ">
         <h1 className={cn("text-6xl my-8 ", subFont.className)}>
           Community & Capital
@@ -48,7 +48,7 @@ export const OfferingsCard = ({
   description,
 }: OfferingCardProps) => {
   return (
-    <Card className="w-[530px] bg-[#0e0e10] text-white border-none">
+    <Card className="w-[530px] bg-[#050512] text-white border-none">
       <CardContent className="flex h-3/5">
         <Image
           className=" w-4/5 "
