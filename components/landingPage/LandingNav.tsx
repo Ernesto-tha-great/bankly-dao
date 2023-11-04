@@ -12,8 +12,11 @@ const LandingNav = () => {
             Piron Finance
           </h1>
           <div className="flex justify-between gap-8  ">
-            <h3 className="text-muted-foreground font-light">Docs</h3>
-            <h3 className="text-muted-foreground font-light">Community</h3>
+            <h3 className="text-muted-foreground font-light">Pools</h3>
+            <h3 className="text-muted-foreground font-light">Marketplace</h3>
+            <h3 className="text-muted-foreground font-light">
+              Investment clubs
+            </h3>
             <h3 className="text-muted-foreground font-light">Governance</h3>
           </div>
         </div>

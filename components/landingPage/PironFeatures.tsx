@@ -1,3 +1,9 @@
+"use client";
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Montserrat, EB_Garamond } from "next/font/google";
 import { Button } from "../ui/button";
@@ -21,9 +27,28 @@ interface OfferingCardProps {
   buttonText: string;
 }
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0, x: 200 },
+};
+
 const PironFeatures = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
   return (
-    <div className="flex flex-col bg-black text-white/90 py-20">
+    <motion.div
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      className="flex flex-col bg-black text-white/90 py-20"
+    >
       <div className="text-center">
         <h1 className={cn("text-5xl", subFont.className)}>
           Explore DeFi for the real world
@@ -42,7 +67,7 @@ const PironFeatures = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -55,7 +80,11 @@ export const PironFeaturesCard = ({
   buttonText,
 }: OfferingCardProps) => {
   return (
-    <div className="m-4 border border-blue-950 p-8 rounded-lg  hover:bg-blue-900 transition translate-y-1 duration-150  ">
+    <div
+      className={cn(
+        "m-4 border border-blue-950 p-8 rounded-lg  hover:bg-blue-900 transition translate-y-1 duration-150 animate-in"
+      )}
+    >
       <div className="space-y-8 ">
         <h1 className={cn("text-2xl", subFont.className)}>{title}</h1>
 
