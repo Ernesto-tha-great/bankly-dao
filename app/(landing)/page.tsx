@@ -28,9 +28,9 @@ const LandingPage = () => {
       <section>
         <Conversation />
       </section>
-      <footer>
+      <section>
         <Footer />
-      </footer>
+      </section>
     </div>
   );
 };
