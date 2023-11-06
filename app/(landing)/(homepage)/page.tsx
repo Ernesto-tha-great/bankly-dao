@@ -9,7 +9,7 @@ import Conversation from "@/components/landingPage/Conversation";
 
 const LandingPage = () => {
   return (
-    <div className="relative h-screen  ">
+    <div className="h-screen  ">
       <nav className="">
         <LandingNav />
       </nav>
