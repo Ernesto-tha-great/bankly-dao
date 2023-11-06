@@ -47,15 +47,15 @@ const PironFeatures = () => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
-      className="flex flex-col bg-black text-white/90 py-20"
+      className="flex flex-col bg-black text-white/90 py-20 px-4"
     >
       <div className="text-center">
-        <h1 className={cn("text-5xl", subFont.className)}>
+        <h1 className={cn(" text-4xl lg:text-5xl", subFont.className)}>
           Explore DeFi for the real world
         </h1>
       </div>
       <div className="">
-        <div className="grid grid-cols-2 gap-6  mx-16 m-16 ">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-6  mx-16 m-16 ">
           {data2.map((item) => (
             <PironFeaturesCard
               key={item.title}
@@ -82,7 +82,7 @@ export const PironFeaturesCard = ({
   return (
     <div
       className={cn(
-        "m-4  p-8 rounded-lg  hover:bg-blue-900 transition translate-y-1 duration-150 animate-in"
+        "w-auto m-4  p-8 rounded-lg border border-blue-950 md:border-none   hover:bg-blue-900 transition translate-y-1 duration-150 animate-in"
       )}
     >
       <div className="space-y-8 ">

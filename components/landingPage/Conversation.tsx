@@ -38,16 +38,19 @@ const Conversation = () => {
   }
 
   return (
-    <div className="bg-black text-white/90 border-t border-blue-200">
-      <div className="text-center py-24">
-        <h1 className={cn("text-5xl", subFont.className)}>
+    <div className="bg-black text-white/90 border-t border-blue-200 p-4">
+      <div className="text-center py-16 lg:py-24">
+        <h1 className={cn(" text-4xl lg:text-5xl", subFont.className)}>
           Join the Conversation
         </h1>
       </div>
-      <div className="grid grid-cols-2 mx-16 py-14">
-        <div className="border-r border-blue-950">
+      <div className="grid grid-cols-1 gap-16  items-start md:grid-cols-2 mx-8 lg:mx-16 py-8 lg:py-14">
+        <div className="md:border-r border-blue-950">
           <Form {...form}>
-            <form className="space-y-8" onSubmit={form.handleSubmit(onSubmit)}>
+            <form
+              className="space-y-8 pr-4"
+              onSubmit={form.handleSubmit(onSubmit)}
+            >
               <FormField
                 control={form.control}
                 name="email"
@@ -80,7 +83,7 @@ const Conversation = () => {
           </Form>
         </div>
 
-        <div className="space-y-12 ml-20">
+        <div className="space-y-12 lg:ml-20">
           <h2 className={cn("text-4xl ", subFont.className)}>
             Say GM, we're listening
           </h2>
