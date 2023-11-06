@@ -26,7 +26,7 @@ const Offerings = () => {
           Community & Capital
         </h1>
       </div>
-      <div className="grid grid-cols-3 gap-x-4 gap-y-10  mx-6 my-24 ">
+      <div className="grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  gap-x-4 gap-y-10  mx-6 my-24 ">
         {data1.map((item) => (
           <OfferingsCard
             key={item.title}
@@ -48,7 +48,7 @@ export const OfferingsCard = ({
   description,
 }: OfferingCardProps) => {
   return (
-    <Card className="w-[530px] bg-[#050512] text-white border-none">
+    <Card className="w-auto bg-[#050512] text-white border-none">
       <CardContent className="flex h-3/5">
         <Image
           className=" w-4/5 "

@@ -82,7 +82,7 @@ export const PironFeaturesCard = ({
   return (
     <div
       className={cn(
-        "m-4 border border-blue-950 p-8 rounded-lg  hover:bg-blue-900 transition translate-y-1 duration-150 animate-in"
+        "m-4  p-8 rounded-lg  hover:bg-blue-900 transition translate-y-1 duration-150 animate-in"
       )}
     >
       <div className="space-y-8 ">

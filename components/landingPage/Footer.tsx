@@ -2,7 +2,7 @@ import { FaTwitter, FaFacebookF, FaMediumM, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-bl from-black  via-blue-950/100 via-5%  to to-black text-white  sm:pt-10 pt-10">
+    <div className="bg-gradient-to-bl from-black  via-blue-950/100 via-5%  to to-black text-white  sm:pt-10 pt-10 mt-auto">
       <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
         {/* Footer Links */}
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
