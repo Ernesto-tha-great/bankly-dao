@@ -7,10 +7,14 @@ const montserrat = EB_Garamond({ weight: "800", subsets: ["latin"] });
 const subFont = EB_Garamond({ weight: "400", subsets: ["latin"] });
 const Hero = () => {
   return (
-    <div className=" flex justify-evenly items-center bg-gradient-to-bl from-black  via-blue-950 via-10%  to to-black  text-white/90">
-      {/* <div className="absolute inset-0 bg-white opacity-10"></div> gradient-to-br from-black via-[#01013a] to-[#00020b] */}
-      <div className="flex flex-col gap-8">
-        <h1 className={cn("text-6xl max-w-xl font-bold", montserrat.className)}>
+    <div className=" flex lg:justify-evenly items-center bg-gradient-to-bl from-black  via-blue-950 via-10%  to to-black  text-white/90">
+      <div className="flex flex-col gap-8 mx-4 ">
+        <h1
+          className={cn(
+            " text-6xl  max-w-lg lg:max-w-xl",
+            montserrat.className
+          )}
+        >
           Decentralized asset management for the next-gen investor.
         </h1>
         <h3 className={cn(" text-lg max-w-lg", subFont.className)}>
@@ -26,7 +30,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className=" ">
+      <div className=" hidden lg:flex">
         <Image alt="hero" src="/hero.svg" width={500} height={500} />
       </div>
     </div>

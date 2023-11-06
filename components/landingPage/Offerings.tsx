@@ -22,11 +22,11 @@ const Offerings = () => {
   return (
     <div className="bg-black text-white/90 py-8">
       <div className="items-center text-center ">
-        <h1 className={cn("text-6xl my-8 ", subFont.className)}>
+        <h1 className={cn(" text-4xl lg:text-6xl my-8 ", subFont.className)}>
           Community & Capital
         </h1>
       </div>
-      <div className="grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  gap-x-4 gap-y-10  mx-6 my-24 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  gap-x-4 gap-y-10  mx-6 my-24 ">
         {data1.map((item) => (
           <OfferingsCard
             key={item.title}
@@ -48,7 +48,7 @@ export const OfferingsCard = ({
   description,
 }: OfferingCardProps) => {
   return (
-    <Card className="w-auto bg-[#050512] text-white border-none">
+    <Card className="w-auto bg-[#0c0c2c] text-white border-none">
       <CardContent className="flex h-3/5">
         <Image
           className=" w-4/5 "
