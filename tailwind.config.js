@@ -25,12 +25,23 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        animation: {
+          fadeIn: "fadeIn 1s ease-out forwards",
+          // ... other animations if needed
+        },
       },
     },
+    animation: {
+      "accordion-down": "accordion-down 0.2s ease-out",
+      "accordion-up": "accordion-up 0.2s ease-out",
+      fadeIn: "fadeIn 1s ease-out forwards",
+    },
   },
+
   plugins: [require("tailwindcss-animate"), require("tailwindcss-gradients")],
 };
