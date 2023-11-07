@@ -48,7 +48,7 @@ export const OfferingsCard = ({
   description,
 }: OfferingCardProps) => {
   return (
-    <Card className="w-auto bg-[#0c0c2c] text-white border-none">
+    <Card className="w-auto bg-[#0b0b27] text-white/90 border-none">
       <CardContent className="flex h-3/5">
         <Image
           className=" w-4/5 "
