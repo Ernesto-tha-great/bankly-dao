@@ -1,7 +1,14 @@
+import Header from "@/components/landingPage/clubs/Header";
+import HowItWorks from "@/components/landingPage/clubs/HowItWorks";
 import React from "react";
 
 const Clubs = () => {
-  return <div> you are looking at Clubs</div>;
+  return (
+    <div>
+      <Header />
+      <HowItWorks />
+    </div>
+  );
 };
 
 export default Clubs;
