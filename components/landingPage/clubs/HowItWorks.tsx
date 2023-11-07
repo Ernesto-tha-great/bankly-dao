@@ -85,7 +85,7 @@ export default HowItWorks;
 
 export const IllustrationCard1 = () => {
   return (
-    <div className="flex flex-col bg-gray-900/5  px-6 py-8 rounded-2xl ">
+    <div className="flex flex-col bg-gray-300/5  px-6 py-8 rounded-2xl ">
       <div className=" self-end border border-blue-950 p-2 rounded-full">
         <h3
           className={cn("flex text-gray-300 items-center", garamond.className)}
@@ -119,7 +119,7 @@ export const IllustrationCard1 = () => {
 
 export const IllustrationCard2 = () => {
   return (
-    <div className="flex flex-col bg-gray-900/5 px-6 py-20 rounded-2xl">
+    <div className="flex flex-col bg-gray-300/5 px-6 py-20 rounded-2xl">
       <div className="flex justify-between p-4 items-center border border-blue-950 rounded-full">
         <div className="flex items-center">
           <Lock size="18" className="inline mr-2 text-blue-950" />
@@ -137,7 +137,7 @@ export const IllustrationCard2 = () => {
 };
 export const IllustrationCard3 = ({}) => {
   return (
-    <div className="flex flex-col bg-gray-900/5 text-gray-300 px-6 py-8 rounded-2xl">
+    <div className="flex flex-col bg-gray-300/5 text-gray-300 px-6 py-8 rounded-2xl">
       <div className=" flex self-center  border border-blue-950 p-2 max-w-xs rounded-full">
         <div className="flex bg-blue-900 items-center ml-0 mr-3  p-1 rounded-2xl">
           <TrendingUp size="24" className=" text-sm inline   " />{" "}
@@ -197,7 +197,7 @@ export const StepCard = ({
 }: StepProps) => {
   return (
     <div className="flex flex-col items-start space-y-4">
-      <h3 className={cn("text-blue-600 ", garamond.className)}>
+      <h3 className={cn("text-blue-600 text-sm ", garamond.className)}>
         {no} / {title.toUpperCase()}
       </h3>
       <h2 className={cn("text-3xl", garamond.className)}>{heading}</h2>

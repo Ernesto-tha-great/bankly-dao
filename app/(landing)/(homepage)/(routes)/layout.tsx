@@ -7,8 +7,7 @@ const HomePageLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="h-full">
       <main className=" flex flex-col min-h-screen">
         <LandingNav />
-        {children}
-
+        <section>{children}</section>
         <Footer />
       </main>
     </div>
