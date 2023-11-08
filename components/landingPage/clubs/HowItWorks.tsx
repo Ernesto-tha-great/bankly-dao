@@ -52,7 +52,7 @@ const HowItWorks = () => {
               key={index}
               className={`flex ${
                 index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-              } items-center  gap-24 mb-10 `}
+              } items-center  gap-24  `}
             >
               <div className="w-1/2">
                 <StepCard
