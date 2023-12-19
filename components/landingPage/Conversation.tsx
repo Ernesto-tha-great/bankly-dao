@@ -85,7 +85,7 @@ const Conversation = () => {
 
         <div className="space-y-12 lg:ml-20">
           <h2 className={cn("text-4xl ", subFont.className)}>
-            Say GM, we're listening
+            Say GM, we &apos;re listening
           </h2>
           <div className="flex gap-6">
             <BsDiscord

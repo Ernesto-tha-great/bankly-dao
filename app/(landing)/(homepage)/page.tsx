@@ -9,7 +9,7 @@ import Conversation from "@/components/landingPage/Conversation";
 
 const LandingPage = () => {
   return (
-    <div className="h-screen  ">
+    <div className="h-screen  " suppressHydrationWarning>
       <nav className="">
         <LandingNav />
       </nav>
