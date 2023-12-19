@@ -50,7 +50,7 @@ const Introduction = () => {
     <div className="flex flex-col bg-black text-white/90 px-6">
       <div className="py-16 text-center ">
         <h1 className={cn("text-5xl", garamond.className)}>
-          Explore Diverse Investment Opportunities with Piron Finance's
+          Explore Diverse Investment Opportunities with Piron Finance&apos;s
           Liquidity Pools
         </h1>
       </div>

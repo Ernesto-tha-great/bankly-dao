@@ -28,25 +28,25 @@ interface OfferingCardProps {
 }
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.1 } },
   hidden: { opacity: 0, scale: 0, x: 200 },
 };
 
 const PironFeatures = () => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
+  // const control = useAnimation();
+  // const [ref, inView] = useInView();
 
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    }
-  }, [control, inView]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     control.start("visible");
+  //   }
+  // }, [control, inView]);
   return (
-    <motion.div
-      ref={ref}
-      variants={boxVariant}
-      initial="hidden"
-      animate={control}
+    <div
+      // ref={ref}
+      // variants={boxVariant}
+      // initial="hidden"
+      // animate={control}
       className="flex flex-col bg-black text-white/90 py-20 px-4"
     >
       <div className="text-center">
@@ -67,7 +67,7 @@ const PironFeatures = () => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
