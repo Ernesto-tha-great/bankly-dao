@@ -47,9 +47,11 @@ const DesktopNav = () => {
             ))}
           </div>
         </div>
-        <Button className="hidden lg:flex bg-blue-600" size="lg">
-          Launch App
-        </Button>
+        <Link href="/pool">
+          <Button className="hidden lg:flex bg-blue-600" size="lg">
+            Launch App
+          </Button>
+        </Link>
       </div>
     </header>
   );
