@@ -28,15 +28,15 @@ const NavItems = [
 ];
 
 const Navigation = () => {
-  const route = window.location.pathname;
+  //   const route = window.location.pathname
 
-  const isActive = (href: string) => route === href;
+  //   const isActive = (href: string) => route === href;
 
   return (
     <>
       <aside
         className={cn(
-          "flex flex-col pl-5 group/sidebar h-screen bg-[#ffffff] overflow-y-auto w-[232px] z-[99999] "
+          "flex flex-col pl-5 group/sidebar h-screen border border-r border-gray-300 bg-[#ffffff] overflow-y-auto w-[232px] z-[99999] "
         )}
       >
         <div className="mt-4">
@@ -48,8 +48,8 @@ const Navigation = () => {
             <div
               key={item.name}
               className={cn(
-                "w-[200px] group/sidebar p-3 rounded-full ",
-                isActive(item.link) ? "bg-[#D7F2F0]" : "hover:bg-[#D7F2F0]"
+                "w-[200px] group/sidebar p-3 rounded-full "
+                // isActive(item.link) ? "bg-[#D7F2F0]" : "hover:bg-[#D7F2F0]"
               )}
             >
               <div className="flex items-center gap-4 pl-4">
@@ -62,8 +62,8 @@ const Navigation = () => {
                 />
                 <span
                   className={cn(
-                    "text-[#292D32] text-lg font-light",
-                    isActive(item.link) && "text-green-600 font-normal"
+                    "text-[#292D32] text-lg font-light"
+                    // isActive(item.link) && "text-green-600 font-normal"
                   )}
                 >
                   {item.name}
