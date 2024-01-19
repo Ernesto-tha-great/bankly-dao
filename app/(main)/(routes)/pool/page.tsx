@@ -3,10 +3,11 @@ import React from "react";
 import Navbar from "./_components/Navbar";
 import { url } from "inspector";
 import Controls from "./_components/Controls";
+import { ChevronsUpDown, FilterX } from "lucide-react";
 
 const PoolPage = () => {
   return (
-    <div className="h-screen bg-gradient-to-tr from-[#FBF7FF] pl-12  to-[#E4CCFF] ">
+    <div className="h-screen bg-gradient-to-tr from-[#FBF7FF] pl-12 via-[#f5f0fa]  to-[#E4CCFF] ">
       <Navbar />
 
       <div>
@@ -58,6 +59,32 @@ const PoolPage = () => {
 
         <div className="my-4">
           <Controls />
+        </div>
+      </div>
+
+      <div className="mt-16">
+        <div className="flex items-center justify-between mx-4 font-medium text-[#5A6675]">
+          <div>
+            <h3>Pool Name</h3>
+          </div>
+          <div className="flex items-center justify-between mr-6 w-2/3">
+            <h3 className="inline-flex gap-1">
+              Asset Class
+              <FilterX className="h-5 w-5 text-gray-400" />
+            </h3>
+            <h3 className="inline-flex gap-1">
+              Value Locked
+              <ChevronsUpDown className="h-5 w-5 text-gray-400" />
+            </h3>
+            <h3 className="inline-flex gap-1">
+              APR
+              <ChevronsUpDown className="h-5 w-5 text-gray-400" />
+            </h3>
+            <h3 className="inline-flex gap-1">
+              Status
+              <FilterX className="h-5 w-5 text-gray-400" />
+            </h3>
+          </div>
         </div>
       </div>
     </div>
