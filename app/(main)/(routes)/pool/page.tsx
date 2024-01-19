@@ -4,10 +4,12 @@ import Navbar from "./_components/Navbar";
 import { url } from "inspector";
 import Controls from "./_components/Controls";
 import { ChevronsUpDown, FilterX } from "lucide-react";
+import PoolCard from "./_components/PoolCard";
+import { data1 } from "./_components/dummy";
 
 const PoolPage = () => {
   return (
-    <div className="h-screen bg-gradient-to-tr from-[#FBF7FF] pl-12 via-[#f5f0fa]  to-[#E4CCFF] ">
+    <div className="flex flex-col h-screen  ">
       <Navbar />
 
       <div>
@@ -36,7 +38,7 @@ const PoolPage = () => {
             </h1>
           </div>
 
-          <div
+          {/* <div
             style={{
               backgroundImage: `url("/card12.svg")`,
               backgroundRepeat: "no-repeat",
@@ -54,7 +56,7 @@ const PoolPage = () => {
             <Button size="lg" className="mt-6 rounded-full bg-[#1AAFBF] px-12">
               Get Started
             </Button>
-          </div>
+          </div> */}
         </div>
 
         <div className="my-4">
@@ -62,8 +64,8 @@ const PoolPage = () => {
         </div>
       </div>
 
-      <div className="mt-16">
-        <div className="flex items-center justify-between mx-4 font-medium text-[#5A6675]">
+      <div className="flex flex-col gap-10 mt-16">
+        <div className="flex items-center justify-between mx-20 font-medium text-[#5A6675]">
           <div>
             <h3>Pool Name</h3>
           </div>
@@ -85,6 +87,17 @@ const PoolPage = () => {
               <FilterX className="h-5 w-5 text-gray-400" />
             </h3>
           </div>
+        </div>
+
+        <div className="flex flex-col overflow-scroll px-2">
+          {data1.map((item, index) => (
+            <PoolCard
+              key={index}
+              name={item.name}
+              assetClass={item.assetClass}
+              value={item.value}
+            />
+          ))}
         </div>
       </div>
     </div>
