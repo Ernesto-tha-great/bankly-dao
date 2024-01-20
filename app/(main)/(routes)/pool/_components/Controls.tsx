@@ -22,7 +22,7 @@ const Controls = () => {
 
         <div className="flex items-center gap-2">
           <Switch />
-          <h2>My portfolio only</h2>
+          <h2 className="text-[#494d53]">My portfolio only</h2>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ const Controls = () => {
         <SearchBar />
         <Select>
           <SelectTrigger className="w-[128px] rounded-full bg-transparent border-[#8797A7]">
-            <SelectValue placeholder="Sort By" />
+            <SelectValue className="text-[#292D32]" placeholder="Sort By" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
@@ -52,8 +52,8 @@ export const SearchBar = () => {
     <div className="flex items-center justify-start border border-[#8797A7] rounded-full pl-4   ">
       <Search className="h-5 w-5 text-gray-400" />
       <Input
-        className=" bg-transparent border-none focus:ring-0 md:w-42 w-full"
-        placeholder="Search"
+        className=" bg-transparent border-none focus:ring-0 md:w-48 w-full"
+        placeholder="Search Pools"
         type="search"
       />
     </div>
